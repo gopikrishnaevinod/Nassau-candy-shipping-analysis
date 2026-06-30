@@ -20,9 +20,10 @@ st.markdown("---")
 # =====================================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv('outputs/cleaned_data.csv')
-    df['Order Date'] = pd.to_datetime(df['Order Date'])
-    df['Ship Date'] = pd.to_datetime(df['Ship Date'])
+    df = pd.read_csv('https://raw.githubusercontent.com/gopikrishnaevinod/nassau-candy-shipping-analysis/main/cleaned_data.csv')
+route_metrics = pd.read_csv('https://raw.githubusercontent.com/gopikrishnaevinod/nassau-candy-shipping-analysis/main/route_metrics.csv')
+state_metrics = pd.read_csv('https://raw.githubusercontent.com/gopikrishnaevinod/nassau-candy-shipping-analysis/main/state_metrics.csv')
+ship_mode_metrics = pd.read_csv('https://raw.githubusercontent.com/gopikrishnaevinod/nassau-candy-shipping-analysis/main/ship_mode_metrics.csv')
     return df
 
 @st.cache_data
