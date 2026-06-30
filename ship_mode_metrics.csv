@@ -1,0 +1,5 @@
+Ship Mode,Total_Orders,Avg_Lead_Time,Min_Time,Max_Time,Total_Sales
+First Class,639,1385.6,613.0,1961.0,8724.36
+Same Day,247,1405.35,785.0,1929.0,3125.15
+Second Class,799,1372.39,644.0,1960.0,11208.84
+Standard Class,2445,1354.83,617.0,1965.0,34006.57
